@@ -1,5 +1,6 @@
-public class User {
-    public static void main(String[] args) {
+//public class User { string int
+//konstruktor
+//    public static void main(String[] args) {talic obietów typu user a nie string
 
 //        String[] users = new String[6];
 //        users[0] = "Klapouchy";
@@ -11,6 +12,7 @@ public class User {
 //
 //        for (int i = 0; i < users.length; i++) {
 //            System.out.println(users[i]);
+//utwórz zmienne i konstruktor
 
 //        User klapouchy = new User("Klapouchy", 15);
 //        User prosiaczek = new User("Prosiaczek", 10);
@@ -20,7 +22,16 @@ public class User {
 //        User malenstwo = new user("Malenstwo", 5);
 //
 //        User[] users = {klapouchy, prosiaczek, krzys, tygrysek, sowa, malenstwo};
-
-
-        }
-    }
+//
+//        public int sumNumbers(int[] numbers) {
+//          int result = 0;
+//          for (int i = 0; i < numbers.length; i++) {
+//          result = result + numbers[i];
+//          }
+//          return result;
+//}
+//
+//
+//
+//        }
+//    }
