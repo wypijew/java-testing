@@ -1,6 +1,6 @@
 
 public class User {
-    static User[] user;
+
     public String name;
     public int age;
 
@@ -10,27 +10,6 @@ public class User {
         int sum = 0;
         int average =0 ;
         int belowAverage = 0;
-    }
-
-    public int sum() {
-        int sum = 0;
-        for (int i = 0; i < user.length; i++) {
-            sum = sum + user[i].age;
-        }
-        System.out.println(sum);
-
-        int average;
-        average = sum/user.length;
-        System.out.println(average);
-
-        int belowAverage = average;
-        for (int i = 0; i < user.length; i++) {
-            if (user[i].age < belowAverage) {
-                System.out.println(user[i].name + user[i].age);
-            }
-
-        }
-        return sum / user.length;
     }
 }
 //    double sumAge = 0;
