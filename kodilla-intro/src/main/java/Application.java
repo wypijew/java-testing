@@ -1,18 +1,18 @@
 public class Application {
 
-    public double age = 40.5;
-    public double height = 178;
-    public String name = "Adam";
+    public double age;
+    public double height;
+    public String name;
 
 
-    public Application() {
+    public Application(String name, double age, double height) {
         this.name = name;
         this.age = age;
         this.height = height;
     }
 
     public static void main(String[] args) {
-        Application application = new Application();
+        Application application = new Application("Adam", 40.5, 178.0);
         System.out.println(application.name);
 
         if (application.name != null) {
