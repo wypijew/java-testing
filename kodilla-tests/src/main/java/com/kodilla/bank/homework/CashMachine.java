@@ -49,7 +49,7 @@ public class CashMachine {
         return count;
     }
 
-    public double getAverageWithdrawal() {
+    public double getSumOfWithdrawals() {
         if (getWithdrawalsCount() == 0) {
             return 0;
         }
@@ -59,10 +59,10 @@ public class CashMachine {
                 sum += this.transactions[i];
             }
         }
-        return (double) sum / getWithdrawalsCount();
+        return sum;
     }
 
-    public double getAverageDeposit() {
+    public double getSumOfDeposits() {
         if (getDepositsCount() == 0) {
             return 0;
         }
@@ -72,7 +72,7 @@ public class CashMachine {
                 sum += this.transactions[i];
             }
         }
-        return (double) sum / getDepositsCount();
+        return sum;
     }
 
     public int getNumberOfTransactions() {

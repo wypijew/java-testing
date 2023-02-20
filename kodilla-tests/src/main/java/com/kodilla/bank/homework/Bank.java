@@ -11,11 +11,6 @@ public class Bank {
     }
 
     public void addTransaction(int cashMachineIndex, int transaction) {
-        int[] transactions = this.cashMachines[cashMachineIndex].getTransactions();
-        int[] newTransactions = new int[transactions.length + 1];
-        System.arraycopy(transactions, 0, newTransactions, 0, transactions.length);
-        newTransactions[newTransactions.length - 1] = transaction;
-        this.cashMachines[cashMachineIndex] = new CashMachine();
         this.cashMachines[cashMachineIndex].addTransaction(transaction);
     }
 
@@ -50,7 +45,7 @@ public class Bank {
         }
         int sum = 0;
         for (int i = 0; i < this.cashMachines.length; i++) {
-            sum += this.cashMachines[i].getAverageWithdrawal() * this.cashMachines[i].getWithdrawalsCount();
+            sum += this.cashMachines[i].getSumOfWithdrawals();
         }
         return (double) sum / withdrawalsCount;
     }
@@ -62,7 +57,7 @@ public class Bank {
         }
         int sum = 0;
         for (int i = 0; i < this.cashMachines.length; i++) {
-            sum += this.cashMachines[i].getAverageDeposit() * this.cashMachines[i].getDepositsCount();
+            sum += this.cashMachines[i].getSumOfDeposits();
         }
         return (double) sum / depositsCount;
     }
