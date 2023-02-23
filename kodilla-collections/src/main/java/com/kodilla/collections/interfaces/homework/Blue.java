@@ -3,6 +3,10 @@ package com.kodilla.collections.interfaces.homework;
 public class Blue implements Car {
     private int speed;
 
+    public Blue(int speed) {
+        this.speed = speed;
+    }
+
     @Override
 
     public int getSpeed() {

@@ -11,13 +11,12 @@ public class Book {
     }
 
     public static Book of(String author, String title) {
-        Book book = Book.of(author,title);
 
-        return Book.of(author,title);
+        return new Book(author, title);
     }
 
     public static void main(String[] args) {
-        Book book = new Book("Isaac Asimov","The Galaxy");
+        Book book = Book.of("Isaac Asimov","The Galaxy");
         System.out.println("Book of" + " " + author + " - " + title);
     }
 
