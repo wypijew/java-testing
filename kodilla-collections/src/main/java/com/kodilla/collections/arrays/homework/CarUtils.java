@@ -7,10 +7,10 @@ import com.kodilla.collections.interfaces.homework.Yellow;
 
 public class CarUtils {
 
-    public static void describeCar(Car car, int speed) {
+    public static void describeCar(Car car) {
 
         System.out.println("Car name: " + getCarName(car));
-        System.out.println("Car speed: " + speed + " km/h");
+        System.out.println("Car speed: " + car.getSpeed() + " km/h");
         System.out.println("-----------------------------");
 
     }

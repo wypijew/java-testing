@@ -19,38 +19,35 @@ public class CarsApplication {
 
         for (Car car : cars) {
             int speed = random.nextInt(200) + 1;
-            CarUtils.describeCar(car, speed);
+            CarUtils.describeCar(car);
         }
     }
 
     public static Car showCar() {
         int shownCarName = RANDOM.nextInt(3); // losowanie numeru nazwy samochodu
         int speed = RANDOM.nextInt(200) + 1; // losowanie prędkości od 1 do 100 km/h
+//        dodaj speed do konstruktorów wszystkich klas implementmujacych Car i przekaz ja do konstruktora
 
         if (shownCarName == 0) {
-            Car car = new Yellow();
+            Car car = new Yellow(speed);
             car.increaseSpeed();
-            System.out.println("Yellow " + speed);
+            System.out.println("Yellow " + car.getSpeed());
             return car;
         }
         else if (shownCarName == 1) {
-            Car car = new Blue();
+            Car car = new Blue(speed);
             car.increaseSpeed();
-            System.out.println("Blue " + speed);
+            System.out.println("Blue " + car.getSpeed());
             return car;
         }
         else {
-            Car car = new Red();
+            Car car = new Red(speed);
             car.increaseSpeed();
-            System.out.println("Red " + speed);
+            System.out.println("Red " + car.getSpeed());
             return car;
         }
     }
 }
-
-
-
-
 //        if (shownCarName == 0) {
 //            Car car = new Yellow();
 //            car.getSpeed();
