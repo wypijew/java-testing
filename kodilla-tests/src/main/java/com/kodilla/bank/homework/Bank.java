@@ -2,6 +2,7 @@ package com.kodilla.bank.homework;
 
 public class Bank {
     private CashMachine[] cashMachines;
+    private int size;
 
     public Bank(int numberOfCashMachines) {
         this.cashMachines = new CashMachine[numberOfCashMachines];
@@ -10,8 +11,11 @@ public class Bank {
         }
     }
 
-    public void addTransaction(int cashMachineIndex, int transaction) {
-        this.cashMachines[cashMachineIndex].addTransaction(transaction);
+    public void addCashMachine(CashMachine cashMachine) {
+        CashMachine[] newCashMachines = new CashMachine[this.cashMachines.length + 1];
+        System.arraycopy(this.cashMachines, 0, newCashMachines, 0, this.cashMachines.length);
+        newCashMachines[this.cashMachines.length] = cashMachine;
+        this.cashMachines = newCashMachines;
     }
 
     public int getBalance() {

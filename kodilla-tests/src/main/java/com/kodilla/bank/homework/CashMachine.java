@@ -11,11 +11,18 @@ public class CashMachine {
         this.size = 0;
     }
 
-    public void addTransaction(int transaction) {
-        this.transactions = Arrays.copyOf(this.transactions, this.transactions.length + 1);
-        this.transactions[this.size] = transaction;
+    public void addTransaction (int transaction) {
         this.size++;
+        int[] newTransactions = new int[this.size];
+        System.arraycopy(transactions, 0, newTransactions, 0, transactions. length);
+        newTransactions[this.size -1] = transaction;
+        this.transactions = newTransactions;
     }
+//    public void addTransaction(int transaction) {
+//        this.transactions = Arrays.copyOf(this.transactions, this.transactions.length + 1);
+//        this.transactions[this.size] = transaction;
+//        this.size++;
+//    }
 
     public int[] getTransactions() {
         return transactions;
