@@ -1,7 +1,7 @@
 public class Book {
 
-    private static String author;
-    private static String title;
+    private String author;
+    private String title;
 
 
     public Book (String author, String title) {
@@ -18,7 +18,7 @@ public class Book {
 
     public static void main(String[] args) {
         Book book = Book.of("Isaac Asimov","The Galaxy");
-        System.out.println("Book of" + " " + Book.author + " - " + Book.title);
+        System.out.println("Book of" + " " + book.author + " - " +book.title);
     }
 
 }
