@@ -1,4 +1,4 @@
-package com.kodilla.collections.adv.immutable.homework;
+package com.kodilla.collections.advanced.immutable.homework;
 
 public class Task {
     protected String title;

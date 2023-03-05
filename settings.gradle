@@ -15,4 +15,5 @@ findProject(':kodilla-basic-tests:src:main:untitled')?.name = 'untitled'
 include 'kodilla-basic-tests'
 include 'kodilla-tests'
 include 'kodilla-collections'
+include 'kodilla-collections-advanced'
 

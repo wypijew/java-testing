@@ -1,4 +1,4 @@
-package com.kodilla.collections.adv.maps.complex;
+package com.kodilla.collections.advanced.maps.complex;
 
 import java.util.Arrays;
 import java.util.HashMap;

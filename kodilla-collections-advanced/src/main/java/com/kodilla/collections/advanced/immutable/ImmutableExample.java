@@ -1,4 +1,4 @@
-package com.kodilla.collections.adv.immutable;
+package com.kodilla.collections.advanced.immutable;
 
 import com.kodilla.records.BookRecord;
 import com.kodilla.records.TaskRecord;
