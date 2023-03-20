@@ -53,7 +53,7 @@ public class StudentTestSuite {
     }
 
     @Test
-    public void averageShouldBeZeroIfStudentDontHaveGrades() {
+    public void averageShouldBeZeroIfStudentDoesNotHaveGrades() {
         Student student = new Student("Martin");
         assertEquals(0, student.getAverage(), 0.0001);
     }
@@ -76,6 +76,7 @@ public class StudentTestSuite {
         student.addPhysicsGrade(19);
         student.addPhysicsGrade(3);
         student.addPhysicsGrade(3);
+
         assertEquals(2.375, student.getAverage(), 0.001);
     }
 }

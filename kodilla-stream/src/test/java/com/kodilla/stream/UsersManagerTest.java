@@ -20,9 +20,9 @@ public class UsersManagerTest {
         List<String> result = UsersManager.filterChemistGroupUsernames();
 
         // then
-        assertEquals(result.size(), 2);
-        assertEquals(result.get(0), "Walter White");
-        assertEquals(result.get(1), "Gale Boetticher");
+        assertEquals(2, result.size());
+        assertEquals("Walter White", result.get(0));
+        assertEquals("Gale Boetticher", result.get(1));
     }
 
     @Test
@@ -48,7 +48,7 @@ public class UsersManagerTest {
         List<User> olderUsers = getOlderUsers(age);
 
         // then
-        assertEquals(expectedUsers.size(), olderUsers.size());
+        assertEquals(3, olderUsers.size());
         assertTrue(expectedUsers.containsAll(olderUsers));
     }
 

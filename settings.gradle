@@ -16,4 +16,5 @@ include 'kodilla-basic-tests'
 include 'kodilla-tests'
 include 'kodilla-collections'
 include 'kodilla-collections-advanced'
+include 'kodilla-stream'
 
